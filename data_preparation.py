@@ -7,6 +7,7 @@ url = "https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic
 df = pd.read_csv(url)
 
 print("Original dataset shape:", df.shape)
+
 print("\nMissing values before cleaning:")
 print(df.isnull().sum())
 
@@ -26,6 +27,7 @@ print("\nMissing values after cleaning:")
 print(df.isnull().sum())
 
 print("\nCleaned dataset shape:", df.shape)
+
 print("\nFirst 5 rows:")
 print(df.head())
 
@@ -33,3 +35,4 @@ print(df.head())
 df.to_csv("cleaned_titanic.csv", index=False)
 
 print("\nCleaned dataset saved as cleaned_titanic.csv")
+
