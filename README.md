@@ -62,3 +62,20 @@ Install the required libraries using:
 
 ```bash
 pip install pandas matplotlib seaborn
+
+How to Run
+
+Data Preparation
+Run the data preparation script:
+python data_preparation.py
+This prepares and cleans the Titanic dataset.
+
+Exploratory Data Analysis
+
+Run the EDA script:
+python eda_titanic.py
+The script performs statistical analysis and generates visualizations such as survival counts, survival by gender, survival by passenger class, age distribution, fare distribution, and the correlation heatmap.
+
+Conclusion
+
+EDA helps identify patterns, relationships, and distributions in the Titanic dataset. The analysis provides an understanding of survival patterns, passenger characteristics, and relationships between numerical variables. These findings can support further data analysis and machine learning work.
