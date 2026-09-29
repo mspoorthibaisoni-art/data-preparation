@@ -2,13 +2,14 @@
 
 ## Objective
 
-The objective of this task is to analyze the prepared Titanic dataset using statistical methods and data visualizations to identify useful patterns, relationships, and insights.
+The objective of this task is to analyze the prepared Titanic dataset using statistical methods and data visualizations to identify useful patterns, relationships, and insights that can support further analysis and machine learning.
 
 ## EDA Performed
 
 The following analyses were performed:
 
 - Basic information about the dataset
+- Statistical summary of numerical variables
 - Survival distribution
 - Survival analysis by gender
 - Survival analysis by passenger class
@@ -31,19 +32,26 @@ The EDA includes the following visualizations:
 
 ## Key Insights
 
-1. The dataset contains passengers with different survival outcomes, allowing survival patterns to be analyzed.
+1. **Survival varies between passengers.**  
+   The survival distribution shows that passengers belong to two different outcome groups: survived and did not survive. This makes `Survived` an important target variable for predictive modeling.
 
-2. Survival outcomes differ between male and female passengers.
+2. **Gender is strongly associated with survival.**  
+   The survival-by-gender analysis shows different survival patterns between male and female passengers. Therefore, `Sex` can be an important feature for a machine learning model.
 
-3. Passenger class is associated with different survival outcomes.
+3. **Passenger class is associated with survival.**  
+   Survival patterns differ across first, second, and third passenger classes. Therefore, `Pclass` can provide useful information when predicting survival.
 
-4. The dataset contains passengers from different age groups, showing variation in the age distribution.
+4. **Age shows variation across passengers.**  
+   The age distribution contains passengers from different age groups. Age may therefore contribute useful information to a survival prediction model.
 
-5. Fare values vary between passengers, indicating differences in ticket prices.
+5. **Fare values vary considerably between passengers.**  
+   The fare distribution shows differences in ticket prices. Fare can provide additional information about passenger characteristics and may be useful for modeling.
 
-6. The correlation heatmap helps identify relationships between numerical variables in the Titanic dataset.
+6. **Numerical variables have different relationships.**  
+   The correlation heatmap helps identify relationships between numerical variables such as `Survived`, `Pclass`, `Age`, `SibSp`, `Parch`, and `Fare`. This can help during feature selection and model preparation.
 
-7. Survival patterns can also be compared across different combinations of gender and passenger class.
+7. **Gender and passenger class together provide additional information.**  
+   Comparing survival across both gender and passenger class shows that survival patterns can change when multiple features are considered together. This is useful when building a model using more than one predictor.
 
 ## Files
 
@@ -64,7 +72,6 @@ Install the required libraries using:
 
 ```bash
 pip install pandas matplotlib seaborn
-
 How to Run
 
 Data Preparation
@@ -72,12 +79,9 @@ Run the data preparation script:
 python data_preparation.py
 This prepares and cleans the Titanic dataset.
 Exploratory Data Analysis
-
 Run the EDA script:
-
 python eda_titanic.py
 The script performs statistical analysis and generates visualizations including survival count, survival by gender, survival by passenger class, age distribution, fare distribution, correlation heatmap, and survival by gender and class.
-
 Conclusion
 
-EDA helps identify patterns, relationships, and distributions in the Titanic dataset. The analysis provides an understanding of survival patterns, passenger characteristics, and relationships between numerical variables. These findings can support further data analysis and machine learning work.
+The Exploratory Data Analysis identifies important patterns and relationships in the Titanic dataset. Gender, passenger class, age, fare, and combinations of features provide useful information about survival outcomes. These findings can support feature selection, predictive modeling, and further machine learning analysis.
