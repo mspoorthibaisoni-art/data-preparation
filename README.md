@@ -8,15 +8,14 @@ The objective of this task is to analyze the prepared Titanic dataset using stat
 
 The following analyses were performed:
 
-- Dataset structure and basic information
-- Statistical summary using mean, standard deviation, minimum, maximum, and quartiles
-- Missing value analysis
-- Survival count analysis
+- Basic information about the dataset
+- Survival distribution
 - Survival analysis by gender
 - Survival analysis by passenger class
 - Age distribution analysis
 - Fare distribution analysis
-- Correlation analysis of numerical variables
+- Correlation analysis using a heatmap
+- Survival analysis by gender and passenger class
 
 ## Visualizations
 
@@ -28,6 +27,7 @@ The EDA includes the following visualizations:
 4. Age Distribution
 5. Fare Distribution
 6. Correlation Heatmap
+7. Survival by Gender and Class
 
 ## Key Insights
 
@@ -42,6 +42,8 @@ The EDA includes the following visualizations:
 5. Fare values vary between passengers, indicating differences in ticket prices.
 
 6. The correlation heatmap helps identify relationships between numerical variables in the Titanic dataset.
+
+7. Survival patterns can also be compared across different combinations of gender and passenger class.
 
 ## Files
 
@@ -69,12 +71,12 @@ Data Preparation
 Run the data preparation script:
 python data_preparation.py
 This prepares and cleans the Titanic dataset.
-
 Exploratory Data Analysis
 
 Run the EDA script:
+
 python eda_titanic.py
-The script performs statistical analysis and generates visualizations such as survival counts, survival by gender, survival by passenger class, age distribution, fare distribution, and the correlation heatmap.
+The script performs statistical analysis and generates visualizations including survival count, survival by gender, survival by passenger class, age distribution, fare distribution, correlation heatmap, and survival by gender and class.
 
 Conclusion
 
