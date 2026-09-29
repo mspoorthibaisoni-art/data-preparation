@@ -45,6 +45,6 @@ Files
 - "data_preparation.py" – Python code used for data preparation and cleaning.
 - "eda_titanic.py" – Python code used for Exploratory Data Analysis.
 
-Conclusion
+Conclusions 
 
 EDA helps identify patterns, relationships, and distributions in the Titanic dataset. These findings can be useful for understanding factors that may influence survival and can support further machine learning analysis.
