@@ -1,10 +1,10 @@
-Task 2 – Exploratory Data Analysis (EDA)
+# Task 2 – Exploratory Data Analysis (EDA)
 
-Objective
+## Objective
 
-The objective of this task is to analyze the prepared Titanic dataset using statistical methods and data visualizations to identify useful patterns and insights.
+The objective of this task is to analyze the prepared Titanic dataset using statistical methods and data visualizations to identify useful patterns, relationships, and insights.
 
-EDA Performed
+## EDA Performed
 
 The following analyses were performed:
 
@@ -16,8 +16,9 @@ The following analyses were performed:
 - Survival analysis by passenger class
 - Age distribution analysis
 - Fare distribution analysis
+- Correlation analysis of numerical variables
 
-Visualizations
+## Visualizations
 
 The EDA includes the following visualizations:
 
@@ -26,8 +27,9 @@ The EDA includes the following visualizations:
 3. Survival by Passenger Class
 4. Age Distribution
 5. Fare Distribution
+6. Correlation Heatmap
 
-Key Insights
+## Key Insights
 
 1. The dataset contains passengers with different survival outcomes, allowing survival patterns to be analyzed.
 
@@ -37,14 +39,26 @@ Key Insights
 
 4. The dataset contains passengers from different age groups, showing variation in the age distribution.
 
-5. Fare values vary between passengers, indicating differences in ticket prices and passenger groups.
+5. Fare values vary between passengers, indicating differences in ticket prices.
 
-Files
+6. The correlation heatmap helps identify relationships between numerical variables in the Titanic dataset.
 
-- "cleaned_titanic.csv" – Prepared and cleaned Titanic dataset.
-- "data_preparation.py" – Python code used for data preparation and cleaning.
-- "eda_titanic.py" – Python code used for Exploratory Data Analysis.
+## Files
 
-Conclusions 
+- `cleaned_titanic.csv` – Prepared and cleaned Titanic dataset.
+- `data_preparation.py` – Python code used for data preparation and cleaning.
+- `eda_titanic.py` – Python code used for Exploratory Data Analysis and visualizations.
+- `README.md` – Documentation for the project.
 
-EDA helps identify patterns, relationships, and distributions in the Titanic dataset. These findings can be useful for understanding factors that may influence survival and can support further machine learning analysis.
+## Requirements
+
+The project uses Python with the following libraries:
+
+- pandas
+- matplotlib
+- seaborn
+
+Install the required libraries using:
+
+```bash
+pip install pandas matplotlib seaborn
